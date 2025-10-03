@@ -1,0 +1,35 @@
+﻿@model Product
+
+@{
+	ViewData["Title"] = "_ProductCard";
+}
+
+<div class="card">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-1 col-md-2">
+				<img src="@Model.Images.Yellow" alt="@Model.Name" class="card-img">
+			</div>
+		</div>
+		<div class="row">
+			<button type="button" class="color-btn btn btn-light" data-id="0" data-src="@Model.Images.Yellow">
+				yellow <i class="bi bi-justify"></i>
+			</button>
+			<button type="button" class="color-btn btn btn-light" data-id="0" data-src="@Model.Images.White">
+				White <i class="bi bi-justify"></i>
+			</button>
+			<button type="button" class="color-btn btn btn-light" data-id="0" data-src="@Model.Images.Rose">
+				Rose <i class="bi bi-justify"></i>
+			</button>
+		</div>
+		<div class="row">
+			<div class="col-lg-9 col-md-8  align-content-center float-lg-start responsive-button">
+				<h1 class="title text-truncate">@Model.Name</h1>
+				<h1 class="category text-truncate">@Model.Weight</h1>
+				<h1 class="description text-truncate">@Model.PopularityScore</h1>
+				<h1 class="price">$@Model.Price</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
