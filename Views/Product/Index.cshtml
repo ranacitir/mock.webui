@@ -4,17 +4,15 @@
     ViewData["Title"] = "Product/Index";
 }
 
-<div class="container">
-    <div class="card t-card">
-        <div class="row gx-2 ">
-            <div class="col-lg-12">
-                <!-- menu -->
-                @foreach (var product in Model)
-                {
-                    @await Html.PartialAsync("Partials/_ProductCard", product)
-                }
+<div class="container mt-5">
+        <div class="row">
+            <div class="card-list">
+				<!-- menu -->
+				@foreach (var product in Model)
+				{
+					@await Html.PartialAsync("Partials/_ProductCard", product)
+				}
             </div>
         </div>
-    </div>
 </div>
 

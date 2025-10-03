@@ -7,27 +7,30 @@
 <div class="card">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-1 col-md-2">
+			<div class="col-12 text-center">
 				<img src="@Model.Images.Yellow" alt="@Model.Name" class="card-img">
 			</div>
 		</div>
 		<div class="row">
-			<button type="button" class="color-btn btn btn-light" data-id="0" data-src="@Model.Images.Yellow">
-				yellow <i class="bi bi-justify"></i>
-			</button>
-			<button type="button" class="color-btn btn btn-light" data-id="0" data-src="@Model.Images.White">
-				White <i class="bi bi-justify"></i>
-			</button>
-			<button type="button" class="color-btn btn btn-light" data-id="0" data-src="@Model.Images.Rose">
-				Rose <i class="bi bi-justify"></i>
-			</button>
-		</div>
-		<div class="row">
-			<div class="col-lg-9 col-md-8  align-content-center float-lg-start responsive-button">
-				<h1 class="title text-truncate">@Model.Name</h1>
-				<h1 class="category text-truncate">@Model.Weight</h1>
-				<h1 class="description text-truncate">@Model.PopularityScore</h1>
-				<h1 class="price">$@Model.Price</h1>
+			<div class="col-12 align-content-center float-lg-start responsive-button">
+				<h6 class="m-2 mb-3 text-truncate">@Model.Name</h6>
+				<h6 class="m-2 mb-3">$@Model.Price USD</h6>
+				<div class="row">
+					<div class="col-1">
+						<button type="button" class="btn btn-yellow active" data-src="@Model.Images.Yellow">
+						</button>
+					</div>
+					<div class="col-1">
+						<button type="button" class="btn btn-white" data-src="@Model.Images.White">
+						</button>
+					</div>
+					<div class="col-1">
+						<button type="button" class="btn btn-rose" data-src="@Model.Images.Rose">
+						</button>
+					</div>
+				</div>
+				<h6 class="m-2 mb-3 text-truncate">Yellow Gold</h6>
+				<div class="m-2 mb-3 rating" id="rating" data-rating="@Model.PopularityScore"></div><h6>@Model.PopularityScore</h6>
 			</div>
 		</div>
 	</div>
