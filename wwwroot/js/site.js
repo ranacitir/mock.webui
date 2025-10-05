@@ -4,8 +4,6 @@
 // Write your JavaScript code.
 
 
-
-
 $(function () {
 	$(document).on("click", ".btn", function () {
 		var imgSrc = $(this).data("src");
@@ -17,6 +15,19 @@ $(function () {
 		// aktif class
 		card.find(".btn").removeClass("active");
 		$(this).addClass("active");
+
+		const colorMap = {
+			"btn-yellow": "Yellow Gold",
+			"btn-white": "White Gold",
+			"btn-rose": "Rose Gold"
+		};
+
+		for (const key in colorMap) {
+			if ($(this).hasClass("active") && $(this).hasClass(key)) {
+				$("#color").text(colorMap[key]);
+				break;
+			}
+		}
 	});
 });
 

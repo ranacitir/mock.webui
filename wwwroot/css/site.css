@@ -29,16 +29,14 @@
     background-color: var(--rose-gold) !important;
 }
 .rating i {
-    color: #ccc; /* boş yıldız */
+    color: #ccc;
     font-size: 15px;
     margin-right: 3px;
 }
 
     .rating i.filled {
-        color: #fc0; /* dolu yıldız */
+        color: #fc0;
     }
-
-
 
 .card-list {
     display: flex;

@@ -13,8 +13,8 @@
 		</div>
 		<div class="row">
 			<div class="col-12 align-content-center float-lg-start responsive-button">
-				<h6 class="m-2 mb-3 text-truncate">@Model.Name</h6>
-				<h6 class="m-2 mb-3">$@Model.Price USD</h6>
+				<h6 class="mt-2 mb-3 text-truncate">@Model.Name</h6>
+				<h6 class="mt-2 mb3">$@Model.Price USD</h6>
 				<div class="row">
 					<div class="col-1">
 						<button type="button" class="btn btn-yellow active" data-src="@Model.Images.Yellow">
@@ -29,8 +29,11 @@
 						</button>
 					</div>
 				</div>
-				<h6 class="m-2 mb-3 text-truncate">Yellow Gold</h6>
-				<div class="m-2 mb-3 rating" id="rating" data-rating="@Model.PopularityScore"></div><h6>@Model.PopularityScore</h6>
+				<h6 id="color" class="mt-2 text-truncate">Yellow Gold</h6>
+				<div class="mt-2 d-flex align-items-center gap-2">
+					<div class="rating i" id="rating" data-rating="@Model.PopularityScore"></div>
+					<label>@Model.PopularityScore/5</label>
+				</div>
 			</div>
 		</div>
 	</div>
