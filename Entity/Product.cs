@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.ComponentModel;
+using System.Text.Json.Serialization;
 
 namespace mock.webui.Entity
 {
@@ -23,12 +24,15 @@ namespace mock.webui.Entity
     public class Images
     {
         [JsonPropertyName("yellow")]
-        public string Yellow { get; set; }
+        [DisplayName("Yellow Gold")]
+        public string? Yellow { get; set; }
 
         [JsonPropertyName("rose")]
-        public string Rose { get; set; }
+        [DisplayName("Rose Gold")]
+        public string? Rose { get; set; }
 
         [JsonPropertyName("white")]
-        public string White { get; set; }
+        [DisplayName("White")]
+        public string? White { get; set; }
     }
 }
