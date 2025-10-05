@@ -7,7 +7,6 @@
 <div class="container mt-5">
         <div class="row">
             <div class="card-list">
-				<!-- menu -->
 				@foreach (var product in Model)
 				{
 					@await Html.PartialAsync("Partials/_ProductCard", product)

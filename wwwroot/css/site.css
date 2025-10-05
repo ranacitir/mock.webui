@@ -40,13 +40,13 @@
 
 .card-list {
     display: flex;
-    gap: 20px; /* kartlar arası boşluk */
-    overflow-x: auto; /* X ekseninde kaydırma */
+    gap: 20px;
+    overflow-x: auto; 
     padding: 10px;
 }
 
 .card {
-    flex: 0 0 350px; /* her kart sabit genişlik */
+    flex: 0 0 350px; 
     background: #fff;
     border-radius: 12px;
     padding: 15px;

@@ -25,14 +25,14 @@ namespace mock.webui.Entity
     {
         [JsonPropertyName("yellow")]
         [DisplayName("Yellow Gold")]
-        public string Yellow { get; set; }
+        public string? Yellow { get; set; }
 
         [JsonPropertyName("rose")]
         [DisplayName("Rose Gold")]
-        public string Rose { get; set; }
+        public string? Rose { get; set; }
 
         [JsonPropertyName("white")]
         [DisplayName("White")]
-        public string White { get; set; }
+        public string? White { get; set; }
     }
 }
