@@ -14,7 +14,7 @@ namespace mock.webui.Controllers
 
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync("https://localhost:7085/api/product"))
+                using (var response = await httpClient.GetAsync("https://mockwebapi-5dc2ea65ec10.herokuapp.com/api/product"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     products = JsonConvert.DeserializeObject<List<Product>>(apiResponse);
